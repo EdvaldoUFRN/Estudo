@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #heading {
+            display: flex;
+            justify-content: space-between;
+            background: #e50914;
+        }
+
+        #heading .h1 {
+            padding-top: 20px;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            padding:  20 15 15 15;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        #heading h1 a{
+            color: #fff;
+        }
+        
+        #heading a{
+            color: #fff;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
     <!--Só vai aprender a montar a página se ficar fazendo.-->
-    <div></div>
+    <div style="width: 180px; height: 120px;
+    background: red;"> 
+
+<!--Agora você pode fazer com flex ou grid. float é bem ultrapassado.-->
+    <div style="width: 60px; height: 60px;
+    background: yellow; float: left;"></div>
+    <div style="width: 60px; height: 60px;
+    background: blue; float: left;"> </div> 
+    <div style="width: 60px; height: 60px;
+    background: brown; float: left;"> </div> 
+    <div style="text-align: center; width: 120px; height: 60px;
+     background: purple; float: left;">
+     
+    <p style="width: 20px; height: 20px; background: darkcyan;"></p></div>
+</div>
+    <!--Site é basicamente caixa dentro de caixa etc.-->
+    <hr><br>
+    <header id="heading">
+        <h1 class="h1">
+            <a href="#">Netflix</a>
+        </h1>
+        <h2 class="h1">
+            <a href="#">Netflix</a>
+        </h1>
+    </header>
     <!--É possível ver as características dos elementos pelo google chrome inspecionar.-->
 </body>
 </html>
