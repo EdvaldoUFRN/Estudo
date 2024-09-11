@@ -15,6 +15,7 @@
         }
 
         table {
+            width: 800px;
             border-collapse: collapse;
         }
 
@@ -38,47 +39,57 @@
         tfoot td {
             font-style: italic;
         }
+
+        .responsivetable {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto;
+        }
     </style>
 </head>
 
 <body>
     <p>Lorem ipsum dolor sit.</p>
+    <!--é sobre o overflow
+    assim ele vai dar um scroll para a tabela.-->
+    <div class="resposivetable"> <!--Se você quiser deixar ela mais responsiva, deixar ela alinhada.
+        coloca ela numa div, poem uma classe para identificar a tabela inteira.-->
+        <table> <!--Pode por também o tfoot-->
+            <caption>Descrição da tabela.</caption>
+            <thead><!--Cabeçalho, precisa ter linha e colunas.-->
+                <tr>
+                    <th>Titulo 1</th><!--Colunas-->
+                    <th>Titulo 2</th>
+                    <th>Titulo 3</th>
+                </tr>
+            </thead>
 
-    <table> <!--Pode por também o tfoot-->
-        <caption>Descrição da tabela.</caption>
-        <thead><!--Cabeçalho, precisa ter linha e colunas.-->
-            <tr>
-                <th>Titulo 1</th><!--Colunas-->
-                <th>Titulo 2</th>
-                <th>Titulo 3</th>
-            </tr>
-        </thead>
-
-        <tbody><!-- sempre vai receber a mesma quantidade que o thead.-->
-            <tr>
-                <td>Corpo 1</td>
-                <td>Corpo 2</td>
-                <td>Corpo 3</td>
-            </tr>
-            <tr> <!-- Aqui ele está juntando uma tabela como se fosse duas.-->
-                <td colspan="2" rowspan="2">AQUI</td>
-                <td>Corpo 3</td>
-            </tr>
-            <tr>
-                <td>Corpo 3</td>
-            </tr>
-        </tbody>
-        <!--Comando shift + alt + f, faz com que idente todas as linhas.-->
-        <tfoot>
-            <tr>
-                <td colspan="2" rowspan="2"></td>
-                <td rowspan="" style="text-transform: uppercase;">Total:</td>
-            </tr>
-            <tr>
-                <td>R$ 555</td>
-            </tr>
-        </tfoot>
-    </table>
+            <tbody><!-- sempre vai receber a mesma quantidade que o thead.-->
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr> <!-- Aqui ele está juntando uma tabela como se fosse duas.-->
+                    <td colspan="2" rowspan="2">AQUI</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 3</td>
+                </tr>
+            </tbody>
+            <!--Comando shift + alt + f, faz com que idente todas as linhas.-->
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td rowspan="" style="text-transform: uppercase;">Total:</td>
+                </tr>
+                <tr>
+                    <td>R$ 555</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 
 </html>
