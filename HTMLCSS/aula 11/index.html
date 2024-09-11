@@ -17,22 +17,33 @@
 
         nav {
             display: flex;
-            justi
+            align-items: center;
+            background-color: red;
+
         }
 
         nav ul {
             display: flex;
-            flex-direction: column;
-            list-style-type: none;
+            list-style: none;
+            margin-left: 10px;
+            
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
             font-family: sans-serif;
+            padding: 10px 20px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
+<!--O inline não empurra os elementos dele. É somente o conteúdo dele.-->
 <!--Display block, vai quebrar linha e se n por uma largura, ele ocupa inteiro.-->
 <body>
     <!-- quer fazer um menu.-->
