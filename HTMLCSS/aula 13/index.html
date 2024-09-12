@@ -9,6 +9,11 @@
         body {
             font-family: sans-serif;
         }
+
+        label {
+            cursor: pointer;
+            display: block;
+        }
     </style>
 </head>
 
@@ -47,6 +52,60 @@
     <form action="#" method="get" target="_blank" autocomplete="off">
         <p>
             O meu formulário.
+        </p>
+        <p> <!--Colocar os id referente aos input.-->
+            <!--desabled ou readonly, tem como a pessoa ver.-->
+            <label for="nome"> <!-- é baseado no id. -->
+                Nome:
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" value="Luiz Otávio">
+            </label>
+        </p>
+        <!--placeholder,texto de exemplo.-->
+        <p> <!--Colocar os id referente aos input.-->
+            <!--desabled ou readonly, tem como a pessoa ver.-->
+            <label for="dev"> <!-- é baseado no id. -->
+                Sou um dev
+            </label>
+            <!--se você colocar o mesmo nome, ele vai pegar apenas uma opção.-->
+            <input type="checkbox" id="dev" value="dev" required>
+        </p> <!--placeholder,texto de exemplo.-->
+
+        <!--Input para datas e horas.-->
+        <p>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" value="2000-11-09">
+        </p>
+        <p>
+            <label for="datetime">DateTime:</label>
+            <input type="datetime-local" id="datetime" name="datetime" value="2000-11-09T20:00">
+        </p>
+        <p>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" value="20:00:02">
+        </p>
+
+        <p>
+            <!--Não decore as cores, use a internet para pegar os hex.-->
+            <label for="cor">Cor preferida:</label>
+            <input type="color" id="cor" name="cor" value="#FF0000">
+        </p>
+
+        <p>
+            <!--Não decore as cores, use a internet para pegar os hex.-->
+            <label for="email">Seu e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="ex.: email@email.com">
+        </p>
+
+        <p>
+            <!--Não decore as cores, use a internet para pegar os hex.-->
+            <label for="file">Sua foto:</label>
+            <!--Com o multiple ele vai me permitir selecionar vários arquivos com o shift.-->
+            <input type="file" id="file" name="file" accept=".png, .svg, images/*" multiple>
+        </p>
+
+        <p>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
         </p>
     </form>
 </body>
