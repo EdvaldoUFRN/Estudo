@@ -104,8 +104,61 @@
         </p>
 
         <p>
+            <label for="number">Seu número:</label>
+            <input type="number" id="number" name="number" placeholder="Digite um número" min="10" max="50">
+        </p>
+
+        <p>
             <button type="reset">Reset</button>
             <button type="submit">Enviar</button>
+        </p>
+
+        <p>
+            <!--Esse daqui é o de password.-->
+            <label for="password">Sua senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite aqui a sua senha.">
+        </p>
+
+
+        <p>
+            <!--Não decore as cores, use a internet para pegar os hex.-->
+            <label for="range">range:</label>
+            <input type="range" list="tickmarks" id="range" name="range" min="0" max="10" step="2">
+            <datalist id="tickmarks">
+                <option value="0" label="0%"></option>
+                <option value="10"></option>
+            </datalist>
+            <!--Não funcionam, ainda não dá para ver os labels.-->
+            <!--Se for pesquisar na net é mdn.-->
+        </p>
+
+        <p>
+            <label for="url">Sua url:</label>
+            <input type="url" id="url" name="url" placeholder="Digite sua URL.">
+        </p>
+
+        <p> <!-- basicamente melhora a semântica.-->
+            <label for="search">Digite o que deseja procurar:</label>
+            <input type="serach" name="search" id="serach" placeholder="search">
+        </p>
+
+        <p> <!--Se eu já quiser por uma coisa selecionada, então eu coloco como atributo: Selected.-->
+            <label for="select">Selecione alguma opção:</label>
+            <!--também tem como eu fazer um select de múltiplas coisas.-->
+            <select name="select" id="select" multiple>
+                <!--Tem como eu fazer por grupos.-->
+                <optgroup label="Teste">
+
+                    <option value="10" label="Valor 1">
+                    </option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">textarea</label>
+            <!--Quando atinge a coluna ela quebra a linha.-->
+            <textarea name="textarea" id="textarea" rows="8" cols="9">Se a gente colocar, já pode por no texto.</textarea>
         </p>
     </form>
 </body>
