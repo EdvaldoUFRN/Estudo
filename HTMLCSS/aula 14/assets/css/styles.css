@@ -1,5 +1,81 @@
-.caixa {
-    background: red;
-    height: 120px;
-    width: 120px;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+p {
+    color: red;
+}
+
+
+body div section p,
+body div section p h1 {
+    color: blue;
+}
+
+.heading {
+    color: red;
+}
+
+/* Comentários .
+selecionar e dar um control + barra para comentar
+estando no vscode.
+Alt + z quebra as linhas. 
+
+É melhor você fazer coisas em uma classe do que por tags.
+Pode reutilizar as classes.
+
+tem como acumular classes.
+.main-content .heading {
+font-style: italic;
+color: red;
+}
+a div por padrão ela está configurada para herdar as cores.
+para parar de herdar, basta você fazer :
+div {
+color: initial;
+}
+ou h2.heading, tem que ser um h2 que tem a classe heading.
+*/
+
+/*Se você deixar duas classes juntas e sem espaço, ele não vai pegar por herança, ele
+vai pegar e vai dizer por exemplo, ah para acontecer isso daqui você terá que aplicar em uma tag que tenha as duas classes.*/
+
+/*Se eu quiser selecionar apenas a filha da filha, nos iremos fazer: 
+.pai > .filha pode estar colado ou não.
+qualquer coisa eu leio a documentação fellas.*/
+
+/*Pseudo classe é depois dos dois pontos.
+por exemplo:
+    .heading:hover{
+    }
+tem como fazer para toda transição q ocorrer, quanto tempo ela demore para ocorrer.
+ex. 
+.heading {
+    transition: all 1s ease-in-out;
+}
+*/
+
+a {
+    color: darkblue;
+}
+
+a:link {
+    color: deeppink;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: brown;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+/*Qualquer dúvida nova, pegar na documentação da internet.*/
